@@ -1,0 +1,8 @@
+[go]
+bears = FilenameBear, LineLengthBear,
+        GoErrCheckBear, GoImportsBear, GoLintBear, GoVetBear, GofmtBear, CPDBear
+language = Go
+use_spaces = False
+max_line_length = 100
+file_naming_convention = snake
+files = **.go
