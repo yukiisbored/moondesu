@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/BurntSushi/toml"
 )
@@ -11,14 +12,13 @@ type server struct {
 }
 
 type feed struct {
-	Name    string
-	Website string
-	Feed    string
+	URLs           []string      `toml:"feeds"`
+	UpdateDuration time.Duration `toml:"updateDuration"`
 }
 
 type config struct {
 	Server server
-	Feeds  []feed `toml:"feed"`
+	Feed   feed `toml:"subscription"`
 }
 
 func loadConfiguration(path string) (*config, error) {

@@ -1,12 +1,6 @@
 [server]
 port = 8080
 
-[[feed]]
-name = "Example"
-website = "blog.example.com"
-feed = "blog.example.com/feed.xml"
-
-[[feed]]
-name = "Another Example"
-website = "blog.anotherexample.com"
-feed = "blog.anotherexample.com/feed.xml"
+[subscription]
+feeds = ["http://wordpress.schuirmann.eu/feed/"]
+updateDuration = 5
