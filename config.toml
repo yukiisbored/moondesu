@@ -2,5 +2,6 @@
 port = 8080
 
 [subscription]
-feeds = ["http://wordpress.schuirmann.eu/feed/"]
+feeds = ["http://wordpress.schuirmann.eu/feed/",
+         "http://sims1253.github.io/feed.xml"]
 updateDuration = 5
